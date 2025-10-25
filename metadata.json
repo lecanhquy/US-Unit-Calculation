@@ -1,0 +1,5 @@
+{
+  "name": "Copy of US Unit Calculator",
+  "description": "A smart calculator to perform arithmetic operations (+, -, *, /) on US customary units. Get interesting facts and historical context about the units from Gemini.",
+  "requestFramePermissions": []
+}
