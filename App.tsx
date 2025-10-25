@@ -1,4 +1,3 @@
-
 import React, { useState, useCallback, useEffect } from 'react';
 import { UnitInput } from './components/UnitInput.tsx';
 import { OperatorSelector } from './components/OperatorSelector.tsx';
