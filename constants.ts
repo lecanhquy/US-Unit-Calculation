@@ -1,3 +1,4 @@
+
 import { Unit } from './types.ts';
 
 export enum UnitCategory {
@@ -15,7 +16,7 @@ export const BASE_UNITS: { [key in UnitCategory]: string } = {
 };
 
 export const UNITS: { [key: string]: Unit } = {
-  // Length
+  // Length (Base unit: in)
   'in': { name: 'Inch', symbol: 'in', category: UnitCategory.LENGTH, to_base: 1 },
   'ft': { name: 'Foot', symbol: 'ft', category: UnitCategory.LENGTH, to_base: 12 },
   'yd': { name: 'Yard', symbol: 'yd', category: UnitCategory.LENGTH, to_base: 36 },

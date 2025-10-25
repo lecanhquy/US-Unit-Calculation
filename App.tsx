@@ -1,3 +1,4 @@
+
 import React, { useState, useCallback, useEffect } from 'react';
 import { UnitInput } from './components/UnitInput.tsx';
 import { OperatorSelector } from './components/OperatorSelector.tsx';
@@ -8,8 +9,8 @@ import { parseUnitString, calculate, formatValue } from './services/unitConverte
 import { getUnitInsight } from './services/geminiService.ts';
 
 const App: React.FC = () => {
-  const [input1, setInput1] = useState<string>('5 3');
-  const [input2, setInput2] = useState<string>('1 10 1/2');
+  const [input1, setInput1] = useState<string>('5 ft 6 1/2 in');
+  const [input2, setInput2] = useState<string>('2 ft');
   const [operator, setOperator] = useState<Operator>('+');
   
   const [preview1, setPreview1] = useState<string | null>(null);
