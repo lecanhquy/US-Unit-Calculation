@@ -1,5 +1,4 @@
-
-import { GoogleGenAI } from "@google/genai";
+import { GoogleGenAI } from "https://esm.sh/@google/generative-ai";
 import { Operator, UnitId } from "../types.ts";
 import { UNITS } from "../constants.ts";
 
@@ -38,7 +37,7 @@ export const getUnitInsight = async (
   try {
     const response = await ai.models.generateContent({
       model: 'gemini-2.5-flash',
-      contents: [{ role: "user", parts: [{ text: prompt }] }],
+      contents: prompt,
     });
     
     return response.text;
