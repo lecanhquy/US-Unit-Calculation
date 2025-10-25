@@ -1,5 +1,5 @@
 
-import { UNITS } from './constants';
+import { UNITS } from './constants.ts';
 
 export type Operator = '+' | '-' | '*' | '/';
 

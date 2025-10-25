@@ -1,6 +1,7 @@
+
 import { GoogleGenAI } from "@google/genai";
-import { Operator, UnitId } from "../types";
-import { UNITS } from "../constants";
+import { Operator, UnitId } from "../types.ts";
+import { UNITS } from "../constants.ts";
 
 const API_KEY = process.env.API_KEY;
 

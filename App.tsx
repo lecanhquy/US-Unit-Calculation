@@ -1,11 +1,12 @@
+
 import React, { useState, useCallback, useEffect } from 'react';
-import { UnitInput } from './components/UnitInput';
-import { OperatorSelector } from './components/OperatorSelector';
-import { ResultDisplay } from './components/ResultDisplay';
-import { GeminiInsight } from './components/GeminiInsight';
-import { Operator } from './types';
-import { parseUnitString, calculate, formatValue } from './services/unitConverter';
-import { getUnitInsight } from './services/geminiService';
+import { UnitInput } from './components/UnitInput.tsx';
+import { OperatorSelector } from './components/OperatorSelector.tsx';
+import { ResultDisplay } from './components/ResultDisplay.tsx';
+import { GeminiInsight } from './components/GeminiInsight.tsx';
+import { Operator } from './types.ts';
+import { parseUnitString, calculate, formatValue } from './services/unitConverter.ts';
+import { getUnitInsight } from './services/geminiService.ts';
 
 const App: React.FC = () => {
   const [input1, setInput1] = useState<string>('5 3');

@@ -1,5 +1,5 @@
 
-import { Unit } from './types';
+import { Unit } from './types.ts';
 
 export enum UnitCategory {
   LENGTH = 'Length',

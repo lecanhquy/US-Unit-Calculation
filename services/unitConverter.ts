@@ -1,5 +1,6 @@
-import { Operator, UnitId } from '../types';
-import { UNITS, BASE_UNITS, UnitCategory } from '../constants';
+
+import { Operator, UnitId } from '../types.ts';
+import { UNITS, BASE_UNITS, UnitCategory } from '../constants.ts';
 
 const unitLookup = new Map<string, UnitId>();
 Object.entries(UNITS).forEach(([id, unit]) => {

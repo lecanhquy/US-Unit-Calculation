@@ -1,6 +1,7 @@
 
+
 import React from 'react';
-import { Operator } from '../types';
+import { Operator } from '../types.ts';
 
 interface OperatorSelectorProps {
   operator: Operator;
